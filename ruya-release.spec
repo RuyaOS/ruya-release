@@ -231,5 +231,8 @@ install -Dm0644 %{SOURCE27} -t $RPM_BUILD_ROOT%{_prefix}/lib/systemd/system-pres
 
 
 %changelog
+* Mon Oct 10 2022 Mosaab Alzoubi <mosaab[AT]parmg[DOT]sa> - 0.1-2
+- Fixes
+
 * Sat Oct 8 2022 Mosaab Alzoubi <mosaab[AT]parmg[DOT]sa> - 0.1-1
 - Initial build, forked from Fedora.
