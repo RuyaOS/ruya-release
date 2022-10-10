@@ -1,12 +1,12 @@
 %global release_name The Start
 %global dist_version 0.1
-%global fedora_equal 36
+%global fedora_equal %{?fedora}
 %global fedora_rel 100
 
 Summary:	Ruya release files
 Name:		ruya-release
 Version:	%{dist_version}
-Release:	1
+Release:	2
 License:	GPLv3
 
 URL: https://ruya.parmg.sa/
@@ -35,7 +35,8 @@ Provides: ruya-release = %{version}-%{release}
 Provides: ruya-release-variant = %{version}-%{release}
 Provides: ruya-release-identity = %{version}-%{release}
 Requires: ruya-release-common = %{version}-%{release}
-Requires: ruya-dnf
+#Failed in copr
+#Requires: ruya-dnf
 
 
 Conflicts: system-release
